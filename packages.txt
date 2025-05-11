@@ -1,0 +1,6 @@
+gcc
+default-libmysqlclient-dev
+pkg-config
+build-essential
+
+
