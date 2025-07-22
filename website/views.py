@@ -32,4 +32,7 @@ def delete(id):
 def Home():
     all_data = Note.query.all()
     return render_template("home.html", employees=all_data)
+@views.route('/health')
+def health_check():
+    return "OK", 200
 
