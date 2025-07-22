@@ -7,7 +7,8 @@ db = SQLAlchemy()
 def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'createapp'
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:''@localhost/user'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:root@db:3306/flaskapp'
+
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     db.init_app(app)
 
